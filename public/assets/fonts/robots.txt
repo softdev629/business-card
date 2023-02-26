@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: 
+
+
+
+/assets/css/style.css?v=1673652427373
+
+
+href="/view/digital-business-card/style.css?v=1673652427373"

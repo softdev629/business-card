@@ -1,0 +1,31 @@
+<IfModule mod_rewrite.c>
+<IfModule mod_negotiation.c>
+Options -MultiViews -Indexes
+</IfModule>
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ ^$1 [N]
+
+RewriteCond %{REQUEST_URI} (\.\w+$) [NC]
+RewriteRule ^(.*)$ public/$1 
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ server.php
+
+#caching
+<FilesMatch ".(jpg|jpeg|png|gif|swf)$">
+<IfModule mod_headers.c>
+    Header set Cache-Control "max-age=604800, public"
+</IfModule>
+</FilesMatch>
+
+
+<FilesMatch ".(xml|txt|css|js)$">
+<IfModule mod_headers.c>
+    Header set Cache-Control "max-age=604800, proxy-revalidate"
+</IfModule>
+</FilesMatch>

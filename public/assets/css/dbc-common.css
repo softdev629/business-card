@@ -1,0 +1,51 @@
+/** Template slider begin**/
+a.carousel-control-prev {
+ background-color: var(--primary-color);
+ opacity: 1;
+ border-radius: 20px;
+ padding: 9px;
+ height: 28px !important;
+ width: 28px !important;
+ top: 35% !important;
+ z-index: 9;
+}
+
+a.carousel-control-next {
+ background-color: var(--primary-color);
+ opacity: 1;
+ border-radius: 20px;
+ padding: 9px;
+ height: 28px !important;
+ width: 28px !important;
+ top: 35% !important;
+ z-index: 9;
+
+}
+
+.qrc_template_slider::after {
+ content: "";
+ display: block;
+ width: 40px;
+ height: 174px;
+ background: rgb(255, 255, 255);
+ background: linear-gradient(270deg, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+ position: absolute;
+ right: 0px;
+ top: 0;
+ z-index: 0;
+}
+
+.qrc_template_slider::before {
+ content: "";
+ display: block;
+ width: 40px;
+ height: 174px;
+ background: rgb(255, 255, 255);
+ background: linear-gradient(270deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1) 100%);
+ position: absolute;
+ left: 0px;
+ top: 0;
+ z-index: 4;
+}
+
+/** Template slider end**/
