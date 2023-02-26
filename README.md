@@ -1,62 +1,88 @@
-# CodeIgniter 4 Application Starter
+# Digital Business Card
 
-## What is CodeIgniter?
+> Generates digital business card.
+> Live demo [_here_](https://www.qrcodechimp.com/digital-business-card).
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+## Table of Contents
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+- [General Info](#general-information)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Project Status](#project-status)
+- [Room for Improvement](#room-for-improvement)
+- [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+## General Information
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+- This project helps people to generate & design awesome digital business card.
+- Save time & cooler design
+- Purpose is to make clients to feel comfortable & flexible on making their own digital business card.
+- The project idea was good & design was awesome so I undertook it.
 
-## Installation & updates
+## Technologies Used
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+- Tech 1 - CodeIgniter
+- Tech 2 - Javascript
+- Tech 3 - CSS
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+## Features
+
+List the ready features here:
+
+- Prebuilt templates
+- Component management
+- QRCode generator
+
+## Screenshots
+
+![Content screenshot](./img/screenshot-1.png)
+![Design screenshot](./img/screenshot-2.png)
+![QRShape screenshot](./img/screenshot-3.png)
+![QRCode screenshot](./img/screenshot-4.png)
 
 ## Setup
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+This is CodeIgniter based project.
+You have to use composer to install vendor.
+Dependencies are listed on composer.json.
 
-## Important Change with index.php
+1. Clone the project by using `git clone` command.
+2. And inside the project run `composer update`.
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+## Usage
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+You can use this to store personal information as digital business card.
 
-**Please** read the user guide for a better explanation of how CI4 works!
+## Project Status
 
-## Repository Management
+Project is: _complete_.
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+## Room for Improvement
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+These are room for improvement & ToDos.
 
-## Server Requirements
+Room for improvement:
 
-PHP version 7.4 or higher is required, with the following extensions installed:
+- CodeIgniter 4
+- Javascript for UI
+- Component Management Idea
+- JSON data process
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+To do:
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+- Frontend as React or Vue
+- Code Quality
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+## Acknowledgements
+
+- This project was inspired by ADMIN.
+- This project was based on [this tutorial](https://codeigniter.com/).
+- Many thanks to ADMIN.
+
+## Contact
+
+Created by [@violetstar701](https://) - feel free to contact me!
